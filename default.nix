@@ -25,7 +25,7 @@ let
     LC_PAPER = "en_US.UTF-8";
     LC_MEASUREMENT = "en_US.UTF-8";
 
-    buildInputs = [ system_packages rix pkgs.rPackages.quarto pkgs.rPackages.targets pkgs.rPackages.tarchetypes];
+    buildInputs = [ system_packages rix pkgs.rPackages.quarto pkgs.rPackages.targets pkgs.rPackages.tarchetypes pkgs.rPackages.withr ];
 
     shellHook = '' Rscript -e "targets::tar_make()" '';
   }
