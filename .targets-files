@@ -1,8 +1,10 @@
 .gitignore
 .quarto/_freeze/pres/execute-results/html.json
+.quarto/xref/80127561
 .quarto/xref/INDEX
 .quarto/xref/f305c430
 .targets-files
+.targets-runs/
 _targets/.gitignore
 _targets/meta/meta
 _targets/meta/process
