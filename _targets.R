@@ -4,7 +4,7 @@ library(tarchetypes)
 list(
   tar_force(
     name = pres,
-    command = quarto::quarto_render("presentation/pres.qmd"),
+    command = quarto::quarto_render("pres.qmd"),
     format = "file", 
     force = TRUE
   )
