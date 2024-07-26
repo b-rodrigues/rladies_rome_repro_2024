@@ -25,12 +25,12 @@ Code available at: https://github.com/b-rodrigues/rladies_rome_repro_2024
 -   Learn the following tools to turn your projects reproducible
     1.  {renv}
     2.  Docker
-	3.  Nix
+    3.  Nix
 -   What we will *not* learn (but is very useful!):
     1.  Functional programming concepts
     2.  Git and Github
     3.  Documenting, testing and packaging code
-	4.  {targets}
+    4.  {targets}
 
 ## Main reference for this workshop
 
@@ -62,78 +62,6 @@ Here are the 4 main things influencing an analysis' reproducibility:
 ![](images/repro_spectrum.png){fig-align="center"}
 
 Source: Peng, Roger D. 2011. "Reproducible Research in Computational Science." Science 334 (6060): 1226--27
-
-## Risks to mitigate: R versions
-
-R \< 3.6 (`set.seed(1234)`)
-
-```{r, eval=FALSE}
-sample(seq(1, 10), 5)
-```
-
-```{r, echo=FALSE}
-withr::with_seed(seed = 1234,
-                 .rng_sample_kind = "Rounding",
-                 sample(seq(1, 10), 5))
-```
-
-R \>= 3.6 (`set.seed(1234)`)
-
-```{r, eval=FALSE}
-sample(seq(1, 10), 5)
-```
-
-```{r, echo=FALSE}
-withr::with_seed(seed = 1234,
-                 .rng_sample_kind = "Rejection",
-                 sample(seq(1, 10), 5))
-```
-
-Real impact on papers published with R \< 3.6! (ongoing research project)
-
-## Risks to mitigate: package versions
-
-`{stringr}` < 1.5.0:
-
-```{r, eval = F}
-stringr::str_subset(c("", "a"), "")
-```
-
-```{r, eval = F}
-[1] "a"
-```
-
-. . .
-
-`{stringr}` >= 1.5.0:
-
-```{r, eval = F}
-stringr::str_subset(c("", "a"), "")
-```
-
-```{r, eval = F}
-Error in `stringr::str_subset()`:
-! `pattern` can't be the empty string (`""`).
-Run `rlang::last_trace()` to see where the error occurred.
-```
-
-. . .
-
-(Actually a good change, but if you rely on that old behaviour for your script...)
-
-## Risks to mitigate: operating systems (1/3)
-
-Rarely an issue, but [Neupane, et al. 2019](https://pubs.acs.org/doi/10.1021/acs.orglett.9b03216):
-
-> While preparing a manuscript, to our surprise, attempts by team members to replicate these results produced different calculated NMR chemical shifts despite using the same Gaussian files and the same procedure outlined by Willoughby et al. \[...\] these conclusions were based on chemical shifts that appeared to depend on the computer system on which step 15 of that protocol was performed.
-
-## Risks to mitigate: operating systems (2/3)
-
-![](images/table2a.png){fig-align="center"}
-
-## Risks to mitigate: operating systems (3/3)
-
-![](images/table2.png){fig-align="center"}
 
 ## The problem
 
@@ -390,7 +318,7 @@ A popular package manager:
 
 ## The Nix package manager
 
-![Google Play Store](img/play_store.png)
+![Google Play Store](images/play_store.png)
 
 ## Reproducibility in the R ecosystem
 

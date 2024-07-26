@@ -1,5 +1,6 @@
 .gitignore
 .quarto/_freeze/pres/execute-results/html.json
+.quarto/xref/31ff94fc
 .quarto/xref/80127561
 .quarto/xref/INDEX
 .quarto/xref/bae85cdc
@@ -11,6 +12,7 @@ _targets/meta/meta
 _targets/meta/process
 _targets/meta/progress
 _targets/objects/pres_change
+rendered_slides/images/play_store.png
 rendered_slides/images/repro_spectrum.png
 rendered_slides/images/table2.png
 rendered_slides/images/table2a.png
