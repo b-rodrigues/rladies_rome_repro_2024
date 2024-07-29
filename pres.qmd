@@ -183,7 +183,7 @@ but... :
 
 - Package and R versions are recorded
 - Packages can be restored (but not always!)
-- But where’s the pipeline?
+- But where’s the pipeline? (not covered here, but...)
 
 ## Ensuring long-term reproducibility using Docker
 
