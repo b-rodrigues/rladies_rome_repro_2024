@@ -15,9 +15,9 @@ execute:
 
 Bruno Rodrigues, head of the statistics and data strategy departments at the Ministry of Research and Higher education in Luxembourg
 
-Slides available online at https://is.gd/raps_rladies_rome_2024
+Slides available online at [https://is.gd/raps_rladies_rome_2024](https://is.gd/raps_rladies_rome_2024)
 
-Code available at: https://github.com/b-rodrigues/rladies_rome_repro_2024
+Code available at: [https://github.com/b-rodrigues/rladies_rome_repro_2024](https://github.com/b-rodrigues/rladies_rome_repro_2024)
 
 ## Goal of this workshop
 
