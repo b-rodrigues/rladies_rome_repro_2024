@@ -1,5 +1,6 @@
 .gitignore
 .quarto/_freeze/pres/execute-results/html.json
+.quarto/xref/232bb50d
 .quarto/xref/31ff94fc
 .quarto/xref/80127561
 .quarto/xref/INDEX

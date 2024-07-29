@@ -22,15 +22,11 @@ Code available at: https://github.com/b-rodrigues/rladies_rome_repro_2024
 ## Goal of this workshop
 
 -   Identify *what* must be managed for reproducibility
--   Learn the following tools to turn your projects reproducible
-    1.  {renv}
-    2.  Docker
-    3.  Nix
+-   Learn about the following tools to turn your projects reproducible
+    * {renv}, Docker and Nix
+
 -   What we will *not* learn (but is very useful!):
-    1.  Functional programming concepts
-    2.  Git and Github
-    3.  Documenting, testing and packaging code
-    4.  {targets}
+    * FP, Git, Documenting, testing and packaging code, {targets}
 
 ## Main reference for this workshop
 
