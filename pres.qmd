@@ -301,8 +301,8 @@ Build the image `docker build -t housing_image .`
 
 - Docker is very useful and widely used
 - But the entry cost is high
-- And it's a single point of failure (what happens if Docker gets bought, abandoned, etc?)
-- There are alternatives (Podman, or without containerization: Nix)
+- Single point of failure (what happens if Docker gets bought, abandoned, etc?)
+- Not actually dealing with reproducibility per se, we're "abusing" Docker in a way
 
 ## The Nix package manager
 
@@ -465,13 +465,13 @@ rix(r_ver = "4.3.1",
 
 . . .
 
-Let's check out `expressions/rix_intro/`
+Let's check out `scripts/nix_expressions/rix_intro/`
 
 ## Non-interactive use
 
 - `{rix}` makes it easy to run pipelines in the right environment
 - (Little side note: the best tool to build pipelines in R is `{targets}`)
-- See `expressions/nix_targets_pipeline`
+- See `scripts/nix_expressions/nix_targets_pipeline`
 - Can also run the pipeline like so:
 
 . . .
@@ -498,7 +498,7 @@ cd /absolute/path/to/pipeline/ && nix-shell default.nix --run "Rscript -e 'targe
 - Also possible to evaluate single functions inside a "subshell"
 - Works from R installed via Nix or not!
 - Very useful to use hard-to-install packages such as {arrow}
-- See `expressions/subshell`
+- See `scripts/nix_expressions/subshell`
 
 ## R packages release cycle
 
@@ -506,13 +506,15 @@ cd /absolute/path/to/pipeline/ && nix-shell default.nix --run "Rscript -e 'targe
 - The `rPackages` set gets updated around new R releases (every 3 months or so)
 - What if more recent packages are required?
 - One solution: use our `nixpkgs` fork from our `rstats-on-nix` [organisation](https://github.com/rstats-on-nix/nixpkgs/tree/r-daily)!
+- See `scripts/nix_expressions/bleeding`
 
 ## Conclusion
 
+- Very vast and complex topic!
 - At the very least, generate an `renv.lock` file
 - Always possible to rebuild a Docker image in the future (either you, or someone else!)
 - Consider using `{targets}`: not only good for reproducibility, but also an amazing tool all around
-- Long-term reproducibility: must use Docker (or some alternative), and maintenance effort is required as well
+- Long-term reproducibility: must use Docker or Nix (better: both!) and maintenance effort is required as well
 
 ## The end
 

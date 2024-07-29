@@ -1,4 +1,3 @@
-.gitignore
 .quarto/_freeze/pres/execute-results/html.json
 .quarto/xref/232bb50d
 .quarto/xref/28b1f964
@@ -6,6 +5,7 @@
 .quarto/xref/80127561
 .quarto/xref/INDEX
 .quarto/xref/bae85cdc
+.quarto/xref/c1ebc375
 .quarto/xref/f305c430
 .quarto/xref/fbd4d9b2
 .targets-files
@@ -23,3 +23,4 @@ rendered_slides/images/with_docker.png
 rendered_slides/images/without_docker.png
 rendered_slides/pres.html
 result
+.gitignore
