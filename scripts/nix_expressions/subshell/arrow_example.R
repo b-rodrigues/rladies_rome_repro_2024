@@ -47,7 +47,6 @@ arrow_test <- function() {
 out_nix_arrow <- with_nix(
   expr = function() arrow_test(),
   program = "R",
-  exec_mode = "non-blocking",
   project_path = path_env_arrow,
   message_type = "simple"
 )
