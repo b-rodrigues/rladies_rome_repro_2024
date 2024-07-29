@@ -1,4 +1,4 @@
-Vous pouvez développer localement avec un fichier `default.nix` dédié et vous pouvez
-ensuite déployer l'application n'importe ou du moment que vous pouvez compiler
-l'environnement Nix, ou vous pouvez *dockerizer* l'application avec le même fichier
-`default.nix`.
+You can develop on your computer using the `default.nix` and
+then you can deploy the app anywhere using the same `default.nix`.
+You can also *dockerize* the app and use the `default.nix` to
+restore the development environment in the Docker image.
